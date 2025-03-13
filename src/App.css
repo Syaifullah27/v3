@@ -63,14 +63,33 @@ body {
 
 .input-group {
   position: relative;
+  display: flex;
+  gap: 10px;
   margin-bottom: 2rem;
+}
+
+.input-group button {
+  border: none;
+  background: var(--accent-primary);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-group button:hover {
+  background: var(--accent-secondary);
 }
 
 .input {
   width: 100%;
   padding: 1rem 1.5rem;
   background: var(--bg-secondary);
-  border: 2px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.069);
   border-radius: 0.75rem;
   color: var(--text-primary);
   font-size: 1rem;
@@ -163,6 +182,10 @@ body {
 }
 
 @media (max-width: 640px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
   .container {
     padding: 1.5rem;
     margin: 1rem;
@@ -175,6 +198,19 @@ body {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .input-group {
+    gap: 8px;
+  }
+
+  .input-group input {
+    padding: 8px;
+  }
+  
+
+  .input-group button {
+    padding: 15px;
   }
 }
 

@@ -4,6 +4,7 @@ import axios from 'axios'
 import { FiDownload, FiMusic } from 'react-icons/fi'
 import Loader from './components/Loader'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 export default function App() {
   const [url, setUrl] = useState('')
@@ -59,6 +60,9 @@ export default function App() {
   }
 
   return (
+<>
+    <Navbar />
+
     <div className="container">
       <h1 className="title">
         TikTok Video Downloader
@@ -73,6 +77,7 @@ export default function App() {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
+          <button>Send</button>
         </div>
       </form>
 
@@ -119,5 +124,7 @@ export default function App() {
         </div>
       )}
     </div>
+</>
+
   )
 }

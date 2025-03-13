@@ -1,0 +1,30 @@
+.navbar-wrapper {
+    background-color: #0d1424;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.13);
+
+}
+
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 640px) {
+    .navbar-container {
+        padding: 20px;
+    }
+    .navbar-container h1{
+        font-size: 1.5rem;
+    }
+    .navbar-container img{
+        width: 160px;
+    }
+    
+}
