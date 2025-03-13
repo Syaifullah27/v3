@@ -4,7 +4,7 @@ import axios from 'axios'
 import { FiDownload, FiMusic } from 'react-icons/fi'
 import Loader from './components/Loader'
 import './App.css'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar'
 
 export default function App() {
   const [url, setUrl] = useState('')
